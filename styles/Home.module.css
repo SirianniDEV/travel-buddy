@@ -1,3 +1,9 @@
+/* GREEN - #4A9D93;
+  TEAL - #90AB86;
+  RED - #F17878;
+  YELLOW - #FAD690;
+ */
+
 .container {
   padding: 0 2rem;
 }
@@ -12,20 +18,15 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.main a {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #f5f5f5;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.main a:hover {
+  color: #FAD690;
+
 }
 
 .title a {
@@ -103,15 +104,11 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 

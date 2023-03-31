@@ -8,9 +8,7 @@ import Title from '../components/Title'
 import Footer from '../components/Footer'
 import Button from '../components/Button/button'
 import Text from '../components/Text'
-import PostCard from '../components/PostCard'
-import PostForm from '../components/PostForm'
-
+import PostCard from '../components/PostCard';
 
 export default function Home() {
 
@@ -30,14 +28,14 @@ export default function Home() {
         <main className={styles.main}>
 
           <Image src='./Logo.svg' width={300} height={200}/>
-          <Title txt='Find your next destination'/>
-          <div className={styles.grid}>
-          <Button txt='Explore'  onClick={()=>Explore()} />
-          <Button txt='Post' onClick={()=>Post()}/>
-          </div>
-
-          <a>Sign In</a>
+          <Title txt='Country'/>
           
+          
+          <div className={styles.grid}>
+
+           <PostCard/>
+          </div>
+         
         
         </main>
       <Footer/>
