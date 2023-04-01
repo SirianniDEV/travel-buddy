@@ -3,6 +3,19 @@
   RED - #F17878;
   YELLOW - #FAD690;
  */
+.header{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  width: 100%;
+  height: 500px;
+  top:0;
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg');
+}
+
+.destination {
+  padding-top: 50px;
+}
 
 .container {
   padding: 0 2rem;

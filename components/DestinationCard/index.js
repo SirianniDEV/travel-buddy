@@ -60,7 +60,7 @@ const Img = styled.img
     }
 `
 
-export default function TravelCard({
+export default function DestinationCard({
     title='Country',
     href='/'
 }){

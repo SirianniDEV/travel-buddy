@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Button from '../components/Button/button'
 import Text from '../components/Text'
 import PostCard from '../components/PostCard';
+import PostReview from '../components/PostReview';
 
 export default function Home() {
 
@@ -23,17 +24,20 @@ export default function Home() {
 }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Header/>
+          <div className={styles.header}>
+            <Button txt='🡸' onClick={()=>Explore()}/>
+            <div className={styles.destination}>
+              <Title align='left'size='100px' txt='City' />
+              <Text color='#f5f5f5' align='left' size='50px' txt='Country'/>
+            </div>
+          </div>
         <main className={styles.main}>
-
-          <Image src='./Logo.svg' width={300} height={200}/>
-          <Title txt='Country'/>
-          
           
           <div className={styles.grid}>
 
-           <PostCard/>
+           <PostReview/>
           </div>
          
         

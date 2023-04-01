@@ -8,7 +8,7 @@ import Title from '../components/Title'
 import Footer from '../components/Footer'
 import Button from '../components/Button/button'
 import Text from '../components/Text'
-import TravelCard from '../components/TravelCard';
+import DestinationCard from '../components/DestinationCard';
 
 export default function Home() {
 
@@ -32,7 +32,7 @@ export default function Home() {
           
           <div className={styles.grid}>
 
-           <TravelCard/>
+           <DestinationCard href='/country'/>
           </div>
          
         

@@ -7,8 +7,8 @@ const Container = styled.button
     border-radius: 50px;
     border: none;
     font-size: 20px;
-    padding: 15px;
-    width: 150px;
+    padding: 20px 40px 20px 40px;
+    
     font-family: 'Open Sans';
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;

@@ -16,6 +16,24 @@ const Container = styled.div
     jutsify-content: center;
     flex-driection: row;
 `
+const FormButton = styled.button
+`
+    background-color: #F17878; 
+    color:#f5f5f5;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    
+    font-family: 'Open Sans';
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+
+    &:hover{
+        background-color: #FAD690;
+        color:#000000;
+    }
+`
 
 const Input = styled.input
 `
@@ -51,28 +69,30 @@ const Message = styled.textarea
     }
 `
 
-export default function PostForm(){
+export default function PostForm({
+    onSubmit=()=>{},
+}){
     return(
         <Form>
             <PostCard>
 
-                <Text weight='700' txt="First Name:"/> <Input type="text" id="Name"/>
+                <Text color='#000000' weight='700' txt="First Name:"/> <Input type="text" id="Name"/>
 
-                <Text weight='700' txt="Where did you Travel?"/>
+                <Text color='#000000' weight='700' txt="Where did you Travel?"/>
                 <Container>
-                    <Text txt="City:"/> <Input type="text" id="City"/>
-                    <Text txt="Country:"/> <Input type="text" id="Country"/>
+                    <Text color='#000000' txt="City:"/> <Input type="text" id="City"/>
+                    <Text color='#000000' txt="Country:"/> <Input type="text" id="Country"/>
                 </Container>
 
-                <Text weight='700' txt="When did you Travel?"/>
+                <Text color='#000000' weight='700' txt="When did you Travel?"/>
                 <Container>
                      <Input type="date" id="Start-Date" name="Start-Date"/> <Text txt="to"/>  <Input type="date" id="End-Date" name="End-Date"></Input>
                 </Container>
                 
-                <Text weight='700' txt="How did you enjoy your trip?"/> <Message name="message" cols="22" rows="3" id="Message"></Message>
+                <Text color='#000000' weight='700' txt="How did you enjoy your trip?"/> <Message name="message" cols="22" rows="3" id="Message"></Message>
             </PostCard>
             {/* <Input type="submit" value="Submit"/> */}
-            <Button bgColor="#F17878" color="#f5f5f5" txt="Send!"/>
+            <FormButton onSubmit={onSubmit}>Send!</FormButton>
          </Form>
 
     )
