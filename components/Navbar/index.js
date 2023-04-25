@@ -79,6 +79,9 @@ const Navbar = () => {
           <Link href="/addReview">
               <AddReviewButton>Add Review</AddReviewButton>
           </Link>
+            <Link href="/">
+                <Image src="/logo.svg" alt="Travel Buddy Logo" width={150} height={50} />
+            </Link>
       </NavContainer>
   );
 };

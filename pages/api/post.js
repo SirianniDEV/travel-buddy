@@ -4,8 +4,13 @@ const prisma = new PrismaClient()
 
 
 export default async function handle(req, res) {
-  const { method } = req
+  const session = await getServerSession(req, res, authOptions)
+  if (!session) {
+    res.status(401).json({ error: 'Unauthorized' })
+    return
+  }
 
+  const { method } = req
   switch (method) {
     case 'POST':
       const { name, review } = req.body

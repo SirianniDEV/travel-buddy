@@ -35,7 +35,7 @@ return (
   )
 }
 
-//this does not work :/ 
+//won't navigate back to profile page :( 
 export async function getServerSideProps(context) {
     const session = await getServerSession(context.req, context.res, authOptions)
     
