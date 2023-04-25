@@ -10,6 +10,8 @@ import Button from '../components/Button/button'
 import Text from '../components/Text'
 import DestinationCard from '../components/DestinationCard';
 
+//destination = 'channels' where you add reviews to diffrent destinations you or others create
+
 export default function Home() {
 
   const r = useRouter();
