@@ -17,7 +17,7 @@ export default function Home() {
   const r = useRouter();
 
   const Post = () => {
-      r.push("/post")
+      r.push("/addReview")
   }
 
   const Explore = () => {
@@ -36,7 +36,7 @@ export default function Home() {
           <Button txt='Post' onClick={()=>Post()}/>
           </div>
 
-          <a>Sign In</a>
+          <a href='/auth'>Sign In</a>
           
         
         </main>

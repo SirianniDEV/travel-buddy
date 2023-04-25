@@ -16,7 +16,8 @@ const nextConfig = {
     styledComponents: true
   },
   images: {
-    domains: ['localhost/3000'],
+    domains: ['localhost/3000','avatars.githubusercontent.com'],
+
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
