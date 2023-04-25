@@ -76,12 +76,12 @@ export default function PostForm({
         <Form onSubmit={onSubmit}>
             <PostCard>
 
-                <Text color='#000000' weight='700' txt="First Name:"/> <Input type="text" id="Name"/>
+                <Text color='#000000' weight='700' txt="First Name:"/> <Input type="text" id="name"/>
 
                 <Text color='#000000' weight='700' txt="Where did you Travel?"/>
                 <Container>
-                    <Text color='#000000' txt="City:"/> <Input type="text" id="City"/>
-                    <Text color='#000000' txt="Country:"/> <Input type="text" id="Country"/>
+                    <Text color='#000000' txt="City:"/> <Input type="text" id="city"/>
+                    <Text color='#000000' txt="Country:"/> <Input type="text" id="country"/>
                 </Container>
 
                 <Text color='#000000' weight='700' txt="When did you Travel?"/>
@@ -89,7 +89,7 @@ export default function PostForm({
                      <Input type="date" id="Start-Date" name="Start-Date"/> <Text txt="to"/>  <Input type="date" id="End-Date" name="End-Date"></Input>
                 </Container>
                 
-                <Text color='#000000' weight='700' txt="How did you enjoy your trip?"/> <Message name="message" cols="22" rows="3" id="Message"></Message>
+                <Text color='#000000' weight='700' txt="How did you enjoy your trip?"/> <Message name="message" cols="22" rows="3" id="review"></Message>
             </PostCard>
             {/* <Input type="submit" value="Submit"/> */}
             <FormButton type="submit" >Send!</FormButton>
