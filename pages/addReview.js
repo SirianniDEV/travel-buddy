@@ -13,7 +13,7 @@ import Text from '../components/Text'
 import PostCard from '../components/PostCard'
 import PostForm from '../components/PostForm'
 
-//review = code
+//review = post or 'message' that you add to a destination
 
 export default function addReview({ user }) {
   const router = useRouter();
