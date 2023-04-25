@@ -15,14 +15,15 @@ import PostForm from '../components/PostForm'
 //review = code
 
 export default function addReview({ user }) {
-  const r = useRouter();
+  const router = useRouter();
 
   //post: { is, name, city, country, dates, review }
   const posts = []
 
-  const handleSubmit = () => {
+  const handleSubmit = async({ user, review}) => {
     console.log('post')
     console.table(user, review)
+    router.push('/explore')
   }
 
   return (
@@ -32,6 +33,7 @@ export default function addReview({ user }) {
 
         <Image src='./Logo.svg' width={200} height={200}/>
         <PostForm onSubmit={handleSubmit}/>
+
         
         </main>
       <Footer/>

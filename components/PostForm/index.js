@@ -73,7 +73,7 @@ export default function PostForm({
     onSubmit=()=>{},
 }){
     return(
-        <Form>
+        <Form onSubmit={onSubmit}>
             <PostCard>
 
                 <Text color='#000000' weight='700' txt="First Name:"/> <Input type="text" id="Name"/>
@@ -92,7 +92,7 @@ export default function PostForm({
                 <Text color='#000000' weight='700' txt="How did you enjoy your trip?"/> <Message name="message" cols="22" rows="3" id="Message"></Message>
             </PostCard>
             {/* <Input type="submit" value="Submit"/> */}
-            <FormButton onSubmit={onSubmit}>Send!</FormButton>
+            <FormButton type="submit" >Send!</FormButton>
          </Form>
 
     )

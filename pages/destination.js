@@ -15,8 +15,11 @@ export default function Home() {
 
   const r = useRouter();
 
+  //post: { is, name, city, country, dates, review }
+  const posts = []
+
   const Post = () => {
-      r.push("/post")
+      r.push("/addReview")
   }
 
   const Explore = () => {
@@ -36,11 +39,20 @@ export default function Home() {
         <main className={styles.main}>
           
           <div className={styles.grid}>
-
            <PostReview/>
+           {posts?.map(post => (
+            <div key={post.id}>
+              <PostReview
+                username={post.username}
+                date={post.date}
+                review={post.review}
+                // post={post}
+                href={`/code/${post.id}`}/>
+            </div>
+           ))}
           </div>
          
-        
+        <Button txt='Add Review' onClick={()=>Post()}/>
         </main>
       <Footer/>
     </div>

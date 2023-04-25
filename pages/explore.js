@@ -32,7 +32,7 @@ export default function Home() {
           
           <div className={styles.grid}>
 
-           <DestinationCard href='/country'/>
+           <DestinationCard href='/destination'/>
           </div>
          
         
