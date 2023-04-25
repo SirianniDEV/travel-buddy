@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {useRouter, useState} from 'next/router';
-//import axios from 'axios';
+
+import axios from 'axios';
 
 import Header from '../components/Header'
 import Title from '../components/Title'
@@ -20,10 +21,15 @@ export default function addReview({ user }) {
   //post: { is, name, city, country, dates, review }
   const posts = []
 
-  const handleSubmit = async({ user, review}) => {
+  const handleSubmit = async({ name, review}) => {
+    const {data} = await axios.post('/api/post', {
+       name, 
+       review,
+      })
     console.log('post')
-    console.table(user, review)
-    router.push('/explore')
+    console.log(data)
+
+    // router.push('/explore')
   }
 
   return (
